@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Premium Calculator</title>
+    <link rel="stylesheet" href="calci.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+
+    <!-- Theme Toggle -->
+    <button id="toggleTheme" class="theme-btn no-input">🌙</button>
+
+    <!-- Calculator -->
+    <div class="calculator">
+        <input type="text" id="inputBox" placeholder="0" readonly />
+
+        <div class="btn-grid">
+
+            <button class="btn op">AC</button>
+            <button class="btn op">DEL</button>
+            <button class="btn op">%</button>
+            <button class="btn op">/</button>
+
+            <button class="btn">7</button>
+            <button class="btn">8</button>
+            <button class="btn">9</button>
+            <button class="btn op">*</button>
+
+            <button class="btn">4</button>
+            <button class="btn">5</button>
+            <button class="btn">6</button>
+            <button class="btn op">-</button>
+
+            <button class="btn">1</button>
+            <button class="btn">2</button>
+            <button class="btn">3</button>
+            <button class="btn op">+</button>
+
+            <button class="btn">00</button>
+            <button class="btn">0</button>
+            <button class="btn">.</button>
+            <button class="btn eq">=</button>
+        </div>
+    </div>
+
+    <!-- Floating Chat Button -->
+    <button id="chatBtn" class="chat-floating">💬</button>
+
+    <!-- Popup Chat Window -->
+    <div id="chatWindow" class="chat-popup">
+        <div class="chat-header">
+            Voice Assistant 🤖
+             <button id="clearChat" class="close-btn">🧹</button>
+            <button id="closeChat" class="close-btn">✖</button>
+        </div>
+
+        <div id="chatBox" class="chat-box"></div>
+
+        <div class="chat-input-area">
+            <input type="text" id="chatInput" placeholder="Ask something..." />
+           <button id="sendChat" class="send-arrow">➤</button>
+
+            <button id="voiceBtn">🎤</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+
